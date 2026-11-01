@@ -7,12 +7,12 @@ protected:
 	int m_score;
 public:
 	ShapeItem();
-	virtual void printTri() const = 0;
+	virtual void print() const = 0;
 	virtual bool isValid() const = 0;//判断数据是否合法
 	virtual double calArea() const = 0;
 	virtual double calPerimeter() const = 0;
 	int flow();
-	virtual int GetScore() const
+    int GetScore() const
 	{
 		return m_score;
 	}

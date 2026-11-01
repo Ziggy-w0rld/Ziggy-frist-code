@@ -17,7 +17,7 @@ EllipseItem::EllipseItem(int a, int b)
     m_b = b;
 }
 
-void EllipseItem::printTri() const
+void EllipseItem::print() const
 {
     cout << "Ellipse: a=" << m_a << ", b=" << m_b << endl;
 }

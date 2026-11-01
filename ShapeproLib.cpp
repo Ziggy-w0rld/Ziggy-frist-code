@@ -1,6 +1,5 @@
 #include "ShapeproLib.h"
 #include<iostream>
-#include<random>
 #include<cstdlib>
 #include<ctime>
 #include<cmath>
@@ -45,7 +44,7 @@ void ShapeproLib::showallpro() const
 {
 	for (size_t i = 0; i < m_items.size(); ++i) {
 		cout << "第 " << i + 1 << " 题：";
-		m_items[i]->printTri();     // 虚函数：自动输出实际图形的信息
+		m_items[i]->print();     // 虚函数：自动输出实际图形的信息
 		cout << '\n';
 	}
 }
@@ -54,7 +53,7 @@ void ShapeproLib::showanswers() const
 {
 	for (size_t i = 0; i < m_items.size(); ++i) {
 		cout << "第 " << i + 1 << " 题：";
-		m_items[i]->printTri();
+		m_items[i]->print();
 		cout << "，面积 = " << m_items[i]->calArea()
 			<< "，周长 = " << m_items[i]->calPerimeter() << '\n';
 	}
@@ -65,7 +64,7 @@ void ShapeproLib::testallpro()
 	m_tatalscore = 0;
 	for (size_t i = 0; i < m_items.size(); ++i) {
 		cout << "\n第 " << i + 1 << " 题：";
-		m_items[i]->printTri();
+		m_items[i]->print();
 		cout << '\n';
 		int score = m_items[i]->flow();  // flow 在基类实现，内部虚函数分派
 		m_tatalscore += score;

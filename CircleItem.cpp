@@ -10,7 +10,7 @@ CircleItem::CircleItem()
 	m_r = rand() % 20 + 1;
 }
 
-void CircleItem::printTri() const
+void CircleItem::print() const
 {
 	cout << "Radius: m_r=" << m_r << endl;
 }

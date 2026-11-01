@@ -18,7 +18,7 @@ TrapezoidItem::TrapezoidItem(int top, int bottom, int h)
     m_h = h;
 }
 
-void TrapezoidItem::printTri() const
+void TrapezoidItem::print() const
 {
     cout << "Trapezoid: top=" << m_top << ", bottom=" << m_bottom << ", h=" << m_h << endl;
 }

@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <limits>
 #include <cstdlib>
 #include <ctime>
 #include "ShapeproLib.h"
@@ -17,7 +16,7 @@ int main()
     int choice = 0;
     while (true) {
         cout << "\n请选择功能：\n"
-            << "  1. 计算模式：显示每道题的图形信息、面积和周长\n"
+            << "  1. 查看答案：显示每道题的图形信息、面积和周长\n"
             << "  2. 练习模式：输入你的答案，程序自动判分\n"
 			<< "  3.查看错题库\n"
 			<< "  4.重新练习错题库\n"
@@ -26,7 +25,7 @@ int main()
         cin >> choice;
         switch (choice) {
         case 1:
-            std::cout << '\n';
+            cout << '\n';
             lib.showanswers();
             break;
         case 2:

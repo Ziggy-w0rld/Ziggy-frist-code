@@ -8,7 +8,7 @@ protected:
 public:
     EllipseItem();
     EllipseItem(int a, int b);
-    void printTri() const override;
+    void print() const override;
     bool isValid() const override;
     double calArea() const override;
     double calPerimeter() const override;

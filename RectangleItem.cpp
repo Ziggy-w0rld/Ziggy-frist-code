@@ -14,7 +14,7 @@ RectangleItem::RectangleItem(int a, int b)
 	m_a = a;
 	m_b = b;
 }
-void RectangleItem::printTri()const
+void RectangleItem::print()const
 {
 	cout << "Rectangle sides: m_a=" << m_a << ", m_b=" << m_b << endl;
 }

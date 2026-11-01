@@ -7,7 +7,7 @@ protected:
 public:
 	CircleItem();
 	explicit CircleItem(int r) : m_r(r) {}
-	void printTri() const override;
+	void print() const override;
 	bool isValid() const override;
 	double calArea() const override;
 	double calPerimeter() const override;

@@ -9,7 +9,7 @@ protected:
 public:
 	TriangleItem();//随机生成三条边
 	TriangleItem(int a, int b, int c);//固定数据/测试
-	void printTri() const override;
+	void print() const override;
 	bool isValid() const override;
 	double calArea() const override;
 	double calPerimeter() const override;

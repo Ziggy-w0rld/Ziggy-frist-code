@@ -16,7 +16,7 @@ TriangleItem::TriangleItem(int a, int b, int c)
 	m_b = b;
 	m_c = c;
 }
-void TriangleItem::printTri()const
+void TriangleItem::print()const
 {
 	cout << "Triangle sides: m_a=" << m_a << ", m_b=" << m_b << ", m_c=" << m_c << endl;
 }

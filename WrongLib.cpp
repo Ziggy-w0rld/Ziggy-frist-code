@@ -64,13 +64,13 @@ void WrongLib::showWrong() const
 	}
 	for (size_t i = 0; i < m_wrong.size(); ++i) {
 		cout << "第 " << i + 1 << " 道错题：";
-		m_wrong[i]->printTri();
+		m_wrong[i]->print();
 		cout << "，面积 = " << m_wrong[i]->calArea()
 			<< "，周长 = " << m_wrong[i]->calPerimeter() << '\n';
 	}
 }
 
-void WrongLib::testWrong() const
+void WrongLib::testWrong() 
 {
 	if (m_wrong.empty()) {
 		cout << "错题库为空。\n";
@@ -78,7 +78,7 @@ void WrongLib::testWrong() const
 	}
 	for (size_t i = 0; i < m_wrong.size(); ++i) {
 		cout << "第 " << i + 1 << " 道错题：";
-		m_wrong[i]->printTri();
+		m_wrong[i]->print();
 		int score = m_wrong[i]->flow();
 		cout << "，得分 = " << score << '\n';
 	}

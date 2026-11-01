@@ -12,7 +12,7 @@ public:
 	~WrongLib();
 	void addWrong(ShapeItem* item);
 	void showWrong() const;
-	void testWrong() const;
+	void testWrong();
 	//新增持久化接口
 	void saveToFile(const string& fileName) const;
 	void loadFromFile(const string& fileName);

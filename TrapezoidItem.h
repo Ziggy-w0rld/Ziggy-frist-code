@@ -9,7 +9,7 @@ protected:
 public:
     TrapezoidItem();                // 随机生成等腰梯形
     TrapezoidItem(int top, int bottom, int h);
-    void printTri() const override;
+    void print() const override;
     bool isValid() const override;
     double calArea() const override;
     double calPerimeter() const override;
